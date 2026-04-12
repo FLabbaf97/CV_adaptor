@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cv-adapter"
+version = "0.1.0"
+description = "CLI tool to adapt a LaTeX CV for pending Notion jobs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.12.3",
+    "rich>=13.7.1",
+    "python-dotenv>=1.0.1",
+    "notion-client>=2.2.1",
+]
+
+[tool.setuptools]
+py-modules = []
