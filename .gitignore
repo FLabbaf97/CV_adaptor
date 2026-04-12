@@ -10,6 +10,10 @@ output/
 *.log
 cv_adapter.egg-info/
 
+# Keep the Academic Pages susy output partials tracked.
+!site/_sass/vendor/susy/susy/output/
+!site/_sass/vendor/susy/susy/output/**
+
 .bin/
 applications/
 **/build/
