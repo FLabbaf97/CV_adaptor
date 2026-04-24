@@ -368,7 +368,7 @@ def main() -> int:
 
     root_dir = Path(__file__).resolve().parents[1]
     applications_dir = root_dir / "applications"
-    base_cv_path = root_dir / "base_cv" / "cv_1225_KARAMI.tex"
+    base_cv_path = root_dir / "base_cv" / "cv_0326_KARAMI.tex"
 
     if not base_cv_path.exists():
         raise SystemExit(f"Base CV not found: {base_cv_path}")
