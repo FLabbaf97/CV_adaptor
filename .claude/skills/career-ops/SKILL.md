@@ -116,7 +116,7 @@ Execute the instructions from the loaded mode file.
 - Resolve the folder path relative to the repo root if not absolute.
 - Verify the folder exists; if it does not, tell the user and stop.
 - Find the job description file: prefer `description.md`, fall back to `descriptions.md`. If neither exists, tell the user and stop.
-- Find the CV file: `cv_KARAMI.tex`. If it does not exist, tell the user and stop.
+- Find the CV file: `CV_farzaneh_labbaf.tex`. If it does not exist, tell the user and stop.
 
 ### Step 2 — Extract role requirements
 
@@ -130,7 +130,7 @@ Read the job description and produce a structured summary:
 
 ### Step 3 — Analyse the CV
 
-Read `cv_KARAMI.tex` and evaluate it against the requirements above:
+Read `CV_farzaneh_labbaf.tex` and evaluate it against the requirements above:
 
 - For each must-have requirement: mark as **Met**, **Partial**, or **Missing**, citing the specific CV section/line where evidence exists (or noting absence).
 - For each nice-to-have: mark as **Met** or **Missing**.

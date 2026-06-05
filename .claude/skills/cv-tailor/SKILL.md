@@ -1,6 +1,6 @@
 ---
 name: cv-tailor
-description: "Use when tailoring a CV for a specific saved job application, extracting key role requirements into insights.json, and updating cv_KARAMI.tex to better match the job while keeping all claims truthful. Trigger phrases: tailor CV, adapt resume, job-specific CV, ATS alignment, tailor application CV."
+description: "Use when tailoring a CV for a specific saved job application, extracting key role requirements into insights.json, and updating CV_farzaneh_labbaf.tex to better match the job while keeping all claims truthful. Trigger phrases: tailor CV, adapt resume, job-specific CV, ATS alignment, tailor application CV."
 ---
 
 # CV Tailor Skill
@@ -10,7 +10,7 @@ description: "Use when tailoring a CV for a specific saved job application, extr
 Run a repeatable workflow for a saved application folder by:
 
 - extracting role requirements from descriptions.md into insights.json
-- tailoring cv_KARAMI.tex for that role
+- tailoring CV_farzaneh_labbaf.tex for that role
 - keeping all claims accurate and evidence-based
 
 ## Input
@@ -21,7 +21,7 @@ applications/{company_title_datesaved}/
 Expected files:
 
 - descriptions.md: summary of the job description
-- cv_KARAMI.tex: application-specific copy of the base CV
+- CV_farzaneh_labbaf.tex: application-specific copy of the base CV
 
 Condition:
 
@@ -39,7 +39,7 @@ Condition:
 - match score (0-100% alignment of CV to role requirements) this show waht percentage of the important to have requirements are met by the existing CV content, weighted by their prioritisation in insights.json. This score guides whether tailoring is worthwhile.
 
 2. Tailor the CV if the match score is above 60% otherwise skip adaptation.
-   Update cv_KARAMI.tex using both:
+   Update CV_farzaneh_labbaf.tex using both:
 
 - descriptions.md
 - insights.json
@@ -60,7 +60,7 @@ Tailoring rules:
 A completed application folder containing:
 
 - insights.json
-- cv_KARAMI.tex tailored for the target role
+- CV_farzaneh_labbaf.tex tailored for the target role
 - changes.json summarising CV updates for user review
 
 ## Guardrails

@@ -1,6 +1,6 @@
 ---
 name: motivation-letter
-description: "Use when creating a job-specific motivation letter (cover letter) after CV tailoring. Trigger phrases: create motivation letter, write cover letter, motivation.tex, application letter, one-page letter, adapt motivation letter. Uses adapted cv_KARAMI.tex, descriptions.md, and base_cv/context_for_cover_letter.md to produce truthful, role-aligned motivation.tex."
+description: "Use when creating a job-specific motivation letter (cover letter) after CV tailoring. Trigger phrases: create motivation letter, write cover letter, motivation.tex, application letter, one-page letter, adapt motivation letter. Uses adapted CV_farzaneh_labbaf.tex, descriptions.md, and base_cv/context_for_cover_letter.md to produce truthful, role-aligned motivation.tex."
 argument-hint: "application folder path under applications/..."
 ---
 
@@ -38,7 +38,7 @@ Target application folder:
 Required files:
 
 - `descriptions.md` (job requirements and context)
-- `cv_KARAMI.tex` (adapted, job-specific CV)
+- `CV_farzaneh_labbaf.tex` (adapted, job-specific CV)
 - `base_cv/context_for_cover_letter.md` (master narrative and template language)
 
 Optional but useful:
@@ -49,8 +49,8 @@ Optional but useful:
 
 1. Confirm the application folder exists.
 2. Confirm `descriptions.md` exists.
-3. Confirm `cv_KARAMI.tex` exists.
-4. If `cv_KARAMI.tex` is missing or clearly untailored, stop and ask to run `cv-tailor` first.
+3. Confirm `CV_farzaneh_labbaf.tex` exists.
+4. If `CV_farzaneh_labbaf.tex` is missing or clearly untailored, stop and ask to run `cv-tailor` first.
 5. If `motivation.tex` already exists, update it in place unless the user asks for a second variant.
 
 ## Workflow
@@ -63,7 +63,7 @@ Optional but useful:
 
 2. Map evidence from the adapted CV
 
-- Pull only supported evidence from `cv_KARAMI.tex` (projects, methods, domain experience, internship work, outcomes).
+- Pull only supported evidence from `CV_farzaneh_labbaf.tex` (projects, methods, domain experience, internship work, outcomes).
 - Build a requirement-to-evidence mapping before drafting.
 - Exclude claims that are not explicitly supported in the CV.
 
@@ -103,7 +103,7 @@ Before finalizing, verify all checks pass:
 
 1. Evidence integrity
 
-- Every technical claim is traceable to `cv_KARAMI.tex`.
+- Every technical claim is traceable to `CV_farzaneh_labbaf.tex`.
 - No invented employers, titles, dates, publications, tools, metrics, or language skills.
 
 2. Relevance
@@ -126,11 +126,11 @@ Before finalizing, verify all checks pass:
 - Do not copy the job description verbatim; synthesize and map to evidence.
 - Do not dump all CV content; select only what matches the role.
 - Do not repeat the CV line-by-line; the letter should explain fit and motivation.
-- Do not edit `base_cv/cv_1225_KARAMI.tex`.
+- Do not edit `base_cv/CV_farzaneh_labbaf.tex`.
 - Avoid using em dashes in the letter text.
 
 ## Example Invocations
 
 - `/motivation-letter applications/Proton_2026-03-29_Machine_Learning_Engineer`
 - "Create a one-page motivation.tex for this adapted application folder"
-- "Write a role-specific cover letter using descriptions.md and cv_KARAMI.tex"
+- "Write a role-specific cover letter using descriptions.md and CV_farzaneh_labbaf.tex"
