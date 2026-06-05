@@ -1,0 +1,60 @@
+---
+description: "Core project context for cv_adapter — always loaded. Describes architecture, file conventions, and guardrails for all CV and job-application work."
+alwaysApply: true
+---
+
+# cv_adapter — Project Context
+
+## Purpose
+
+This workspace fetches job listings tagged "Saved" from a Notion database, scaffolds per-job application folders with a copied LaTeX CV, and provides AI-assisted workflows to tailor that CV and write motivation letters — without inventing any credentials.
+
+## File Architecture
+
+```
+base_cv/CV_farzaneh_labbaf.tex          ← master ATS-compatible LaTeX CV (NEVER edit directly for a job)
+base_cv/context_for_cover_letter.md     ← personal narrative and motivation context
+base_cv/cv.md                           ← plain-text CV summary
+scripts/export_saved_jobs.py            ← Notion → applications/ scaffolding script
+applications/{slug}_{YYYY-MM-DD}/       ← one folder per job application
+    descriptions.md                     ← raw job description (from Notion)
+    CV_farzaneh_labbaf.tex              ← per-job copy to tailor
+    insights.json                       ← extracted role requirements (created by cv-tailor workflow)
+    changes.json                        ← summary of CV edits made (created by cv-tailor workflow)
+    motivation.tex                      ← role-specific cover letter (created by motivation-letter workflow)
+    report.md                           ← CV–JD match report
+    build/                              ← latexmk compilation artefacts
+```
+
+## Key Conventions
+
+- **Never edit `base_cv/CV_farzaneh_labbaf.tex` for a specific job.** Always tailor the per-job copy at `applications/.../CV_farzaneh_labbaf.tex`.
+- **Application folder naming**: `{Company}_{YYYY-MM-DD}_{Job_Title}` — created automatically by `export_saved_jobs.py`.
+- **insights.json lifecycle**: created once per application by the cv-tailor workflow. If it already exists, reuse it — don't recreate unless the user asks.
+- **Truthfulness guardrail** (applies to ALL workflows): never invent employers, job titles, dates, achievements, tools, publications, metrics, or certifications. Only reorder, rephrase, and emphasise what already exists in the CV or in the context_for_cover_letter.md.
+
+## Running the Notion Export
+
+```bash
+# Requires NOTION_TOKEN and NOTION_DATABASE_ID in .env
+python scripts/export_saved_jobs.py
+```
+
+## LaTeX Compilation
+
+```bash
+cd applications/{folder}
+latexmk -pdf CV_farzaneh_labbaf.tex
+# or: pdflatex CV_farzaneh_labbaf.tex
+```
+
+Note: `\graphicspath` in the base CV points to the photo/ folder in the repo root. If the workspace is moved, update the path in the `.tex` file.
+
+## Available AI Workflows
+
+| What you say | What happens |
+|---|---|
+| "tailor CV for [folder]" | Runs cv-tailor: creates insights.json, updates CV, creates changes.json |
+| "write motivation letter for [folder]" | Runs motivation-letter: creates motivation.tex |
+| "report on [folder]" | Generates a CV–JD match report.md |
+| "export saved jobs from Notion" | Runs the Python export script |

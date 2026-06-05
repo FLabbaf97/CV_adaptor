@@ -1,0 +1,138 @@
+---
+description: "Motivation letter workflow. Use when the user asks to write, create, or generate a cover letter or motivation letter for a specific job application folder. Produces a single-page motivation.tex using the adapted CV, job description, and personal narrative context. Trigger phrases: write motivation letter, create cover letter, generate motivation.tex, application letter, one-page letter."
+globs: ["applications/**/motivation.tex", "applications/**/descriptions.md", "base_cv/context_for_cover_letter.md"]
+alwaysApply: false
+---
+
+# Motivation Letter Workflow
+
+## Purpose
+
+Generate a concise, role-specific LaTeX motivation letter for a saved application folder.
+
+The letter must:
+- Be grounded entirely in evidence from the adapted CV and job description
+- Follow a clear 4–5 paragraph structure (see below)
+- Fit on a single page (target 260–380 words)
+- Argue role fit using selected evidence — not repeat the CV line-by-line
+- Be saved as `motivation.tex` in the application folder
+
+## Step 0 — Resolve the target folder and check preconditions
+
+1. Identify the application folder under `applications/` from the user's request.
+2. Verify `descriptions.md` exists. If not, stop and tell the user.
+3. Verify `CV_farzaneh_labbaf.tex` exists in that folder. If not, stop and tell the user.
+4. If `CV_farzaneh_labbaf.tex` appears to be the untailored base copy (check whether `insights.json` or `changes.json` are missing), warn the user and recommend running the cv-tailor workflow first. Ask whether to proceed anyway.
+5. Read `base_cv/context_for_cover_letter.md` for personal narrative, transferable skills, and project context.
+6. If `insights.json` exists, load it for pre-extracted priority requirements.
+7. If `motivation.tex` already exists, update it in-place unless the user asks for a second variant.
+
+## Step 1 — Extract role priorities
+
+From `descriptions.md` (and `insights.json` if available), identify:
+- 2–3 core requirements (must-haves)
+- The primary domain focus (e.g. clinical AI, MLOps, NLP)
+- Any company-specific context (mission, product, team size, research focus)
+
+Prefer requirements that appear in must-have sections, responsibilities headings, or are repeated keywords.
+
+## Step 2 — Map evidence from the adapted CV
+
+Read `CV_farzaneh_labbaf.tex` and `base_cv/context_for_cover_letter.md`.
+
+Build an internal requirement → evidence map:
+- For each core requirement: find the strongest matching project, role, or outcome from the CV or context file.
+- Exclude claims not explicitly supported in either source.
+- Prefer concrete outcomes (metrics, deliverables, scope) over generic statements.
+- if the position is in a small company or a startup, make sure to highlight my experience in startups and working in a fast-paced environment.
+
+## Step 3 — Draft the letter (4–5 paragraphs)
+
+### Paragraph 1 — Opening (3–4 lines)
+- State who you are, your specialization, and why this specific role/company.
+- Be specific: name the company and the role. Avoid generic openers.
+
+### Paragraph 2 — Why you: relevant experience (6–10 lines)
+- Match 2–3 job requirements to concrete, CV-backed work.
+- Use the SAR pattern (Situation → Action → Result) implicitly if space allows.
+- Prefer one strong example per requirement over a laundry list.
+
+### Paragraph 3 — Why this company/role: motivation and fit (4–6 lines)
+- Explain why this company's problem, product, or mission connects to your goals.
+- Use context from `context_for_cover_letter.md` where relevant (e.g. research mindset, working environment preferences).
+- Do not make this generic — it must be specific to this employer.
+
+### Paragraph 4 — Your edge (optional but recommended, 3–5 lines)
+- Highlight a differentiating quality: evaluation mindset, cross-domain thinking, practical rigor, or a unique combination of skills.
+- Draw from `context_for_cover_letter.md` — transferable skills, PhD researcher framing, collaboration style.
+
+### Paragraph 5 — Closing (2–3 lines)
+- Reaffirm interest and signal readiness to contribute.
+- Keep it direct and confident.
+
+## Step 4 — Length and style checks
+
+Before writing the file:
+- Count approximate words. Target 260–380 words.
+- If over 380 words: cut the weakest sentences in paragraphs 3–4.
+- Keep sentences tight. Remove phrases like "I am very passionate about..." unless they are specific.
+- Avoid em dashes (—) in the letter text.
+- Do not start consecutive sentences with "I".
+- Reuse natural language patterns from `context_for_cover_letter.md` where appropriate.
+
+## Step 5 — Write motivation.tex
+
+Create or update `applications/{folder}/motivation.tex`.
+
+Use a clean LaTeX letter format. If the folder's CV already imports custom packages or a style file, mirror the document preamble for consistency. Otherwise use a minimal structure:
+
+```latex
+\documentclass[11pt, a4paper]{letter}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{parskip}
+\begin{document}
+\begin{letter}{Hiring Team \\ Company Name}
+\opening{Dear Hiring Team,}
+
+[letter body]
+
+\closing{Best regards,}
+Farzaneh Labbaf
+\end{letter}
+\end{document}
+```
+
+## Step 6 — Quality checks
+
+Before finalizing, verify all of the following:
+
+### Evidence integrity
+- Every technical claim is traceable to `CV_farzaneh_labbaf.tex` or `context_for_cover_letter.md`.
+- No invented employers, titles, dates, publications, tools, metrics, or language skills.
+
+### Relevance
+- At least 2 priority job requirements are explicitly addressed.
+- Company-specific motivation is present — not generic.
+
+### Structure
+- 4–5 paragraphs with clear role progression.
+- Includes opening, relevant experience, motivation/fit, and closing.
+
+### Length
+- Content is within 260–380 words and will compile to one page.
+
+## Step 7 — Report to user
+
+Confirm the file written (`applications/{folder}/motivation.tex`) and display:
+1. The word count.
+2. Which 2–3 requirements were addressed and which CV evidence was used.
+3. Any requirements that could not be addressed truthfully.
+
+## Guardrails
+
+- Do not invent or exaggerate facts.
+- Do not copy the job description verbatim — synthesize and map to evidence.
+- Do not dump all CV content — select only what matches the role.
+- Do not edit `base_cv/CV_farzaneh_labbaf.tex`.
+- Avoid em dashes in the letter text.
+- Do not edit `base_cv/context_for_cover_letter.md`.
