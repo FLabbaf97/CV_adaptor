@@ -2,62 +2,91 @@ Here you can find context about my motivation, my transferable skills, and some 
 
 ## Reflection about myself
 
-I typically consider two ways of involvement in a project: first, taking ownership of a project or a work package within a larger project, and second, contributing as a team member with regard to well-defined tasks.
+I consider myself as a versatile ML engineer and software developer who worked with ML/AI for 3 years most of which is within healthcare, med-tech and biological environment. I also have solid software engineering background. I have a Bachelores degree in computer science and a masters degree in computaional biology. In my masters degree I became familiar with a diverse range of biological data and worked with bioinformtics tools, multi-omics data, biological images, etc which build the foundation for me to work in multi-disciplinary teams. 
+in my work experice, I learned about regulated medical software development and became more interested in regulated AI. I also learned about the medical device software standards including ISO 13485, IEC 62304, and ISO 14971.
 
-One of the transferable skills that I developed during my PhD is project management. I developed the ability to understand the big picture of a project, break it down into manageable tasks and timelines/deadlines, and coordinate with different stakeholders to ensure progress. I have experience in planning and executing research projects, including setting milestones, tracking progress, and adjusting plans as needed. I was involved in two European projects (DigiPredict and RealCare), where I was responsible for the data analytics work package. In these projects, I had to coordinate with clinicians, engineers, and other researchers, which required effective communication and collaboration skills. Additionally, I had the opportunity to mentor junior researchers and students in our lab, which was a rewarding experience that allowed me to develop leadership skills. I also have industry experience at Roche, where I had the opportunity to take ownership of a project and work closely with cross-functional teams, which further enhanced my project management and collaboration skills.
-
-In addition to project management, I am also a strong team player and collaborator. I believe that effective collaboration is essential for the success of any project, and I have experience working in interdisciplinary teams. I am comfortable communicating complex technical concepts to non-technical stakeholders, and I am always open to feedback and new ideas. I have found that fostering a collaborative and inclusive environment leads to better outcomes and more innovative solutions.
-
-Researcher aspect.
-As a researcher, I am passionate about dealing with unknowns and exploring new ideas. I try to keep myself updated with recent methodologies and techniques. If traditional methods do not work for a problem, I am not afraid to try new approaches and experiment with different techniques. For example, during my PhD, I adapted my knowledge from computer vision and natural language processing to develop two novel frameworks for generating synthetic clinical time series, as traditional approaches struggled with the complexity of EHR data.
+I worked both in academic labs, companies, and fast-paced startups which allowed me to experience a diverse range of working environments and cultures. My experience in starutps allowed me to develop a strong sense of ownership and responsibility. I learned about the importance of delivering value to the company and the impact of my work on the business. I also learned about the importance of collaboration and communication with different stakeholders. I have experience working in interdisciplinary teams and I am comfortable communicating complex technical concepts to non-technical stakeholders. I am also a strong team player and I believe that effective collaboration is essential for the success of any project.
 
 Ideal working environment.
-I can imagine two types of tasks at opposite ends of the spectrum: one is very well-defined and structured, where I know it is straightforward and doable, although it takes time. These are normally technical tasks that require a lot of coding and engineering work. The other type of task is more open-ended and exploratory, where I have to deal with unknowns and figure out the best approach to solve a problem. As a fresh PhD graduate, I am looking for a working environment that allows me to do both types of tasks. I want to have the opportunity to work on well-defined projects where I can apply my technical skills and contribute to the team, but I also want to have the freedom to explore new ideas and approaches when faced with open-ended problems. I believe that a balance between these two types of tasks will allow me to grow as a researcher and make meaningful contributions to the field.
+I am highly interested (but not limited) in working within healthcare and med-tech companies where I can apply my technical skills and contribute to the team. I also like to work in fast-paced startups, research groups, and RnD teams where I can learn about the business and the impact of my work on the business. I am also interested in working in a company that is mission-driven and where I can make a difference. 
 
-# Some of my projects
+# Some of my work experience
 
-## PhD
+## ML Engineer at PreciseHealth
+summary: worked as software engineer and machine learning engineer in a health-tech startup, developed machine learning components for an AI-enabled Software as a Medical Device (SaMD) platform. Collaborated with cross-functional engineering and regulatory teams to support development of clinical-grade AI software.
+### Software as a Medical Device (PhageMatch)
+Situation
 
-### Synthetic Data (TimEHR & SynEHRgy)
+The startup aimed to build a regulated AI-driven healthcare platform (SaMD) for personalized phage therapy, requiring alignment between ML development, software engineering, and medical device regulatory constraints (CE/FDA readiness).
 
-Situation:
-Access to real electronic health record data is limited due to privacy constraints, and existing synthetic data approaches often fail to capture the complexity of longitudinal patient records.
+Action
+Contributed to development of an AI-enabled Software as a Medical Device (SaMD) platform intended for CE marking and FDA regulatory pathways
+Worked in a regulated software development environment with exposure to ISO 13485, IEC 62304, ISO 14971, and QMS-driven processes
+Defined and implemented ML system boundaries, ensuring models operated within intended-use constraints and validated data scope
+Collaborated with backend, frontend, and regulatory teams to align product, technical, and compliance requirements
+Supervised and coordinated outsourced frontend development to ensure integration with platform architecture
+Ensured production readiness through emphasis on traceability, reliability, and validation-oriented development practices
+Result
+Delivered a clinically oriented AI platform architecture aligned with medical device software expectations
+Improved cross-team alignment between ML, engineering, and regulatory requirements
+Enabled a structured foundation for future CE/FDA regulatory submission readiness
 
-Action:
-I designed and built two generative frameworks, TimEHR and SynEHRgy, combining modern deep learning architectures with a custom representation pipeline to model heterogeneous and irregular clinical data.
+### Backend Developer and DevOps Engineer and Cloud Architect
+Situation
 
-Result:
-These systems produced realistic and high-quality synthetic patient records that preserved key clinical patterns while maintaining privacy, demonstrating strong capabilities in generative modeling and healthcare-focused machine learning.
+The platform required a scalable, secure, and cost-efficient cloud infrastructure capable of handling genomic data processing, real-time API requests, and batch analysis workloads.
 
-### Irregular Time Series (TEE4EHR)
+Action
+Designed and implemented AWS cloud architecture including networking, routing, ECS services, EC2, S3, RDS, and ECR
+Led backend and infrastructure development using FastAPI and SQL-based systems
+Built and deployed containerized services using Docker and Amazon ECS for scalable microservices
+Designed secure networking architecture including service segmentation, routing, and frontend-backend integration
+Developed batch processing pipelines using ECS tasks for large-scale genomic data analysis
+Managed cloud infrastructure migration and operations across AWS and Azure environments
+Optimized compute, storage, and networking usage to improve efficiency and system scalability
+Reduced cloud operational costs by ~25% through infrastructure optimization and resource management
+Result
+Delivered a production-grade, scalable cloud platform supporting AI-driven healthcare workloads
+Enabled reliable batch and real-time processing of large genomic datasets
+Improved system scalability, maintainability, and cost efficiency across cloud infrastructure
 
-Situation:
-Clinical time series data are irregular and sparse, making it difficult for standard machine learning models to capture meaningful temporal patterns.
 
-Action:
-I developed TEE4EHR, a modular deep learning architecture that integrates event-based modeling with attention mechanisms to better represent patient trajectories over time.
+### AI and ML Engineer
+Situation
 
-Result:
-The approach significantly improved the quality of learned patient representations and led to more accurate and robust predictions across multiple clinical tasks, highlighting my strengths in time-series modeling and representation learning.
+The core product required accurate, interpretable machine learning models capable of analyzing complex genomic and microbial data for personalized phage therapy recommendations.
 
-### LLM-Based Feature Engineering (FeatEHR-LLM)
+Action
+Designed and developed ML models for personalized phage cocktail recommendation using bacterial and phage whole-genome sequencing (WGS) data
+Collaborated with bioinformatics and microbiology teams to translate genomic data into ML-ready features and clinical insights
+Performed feature engineering, feature selection, and data preprocessing on large-scale biological datasets
+Leveraged bioinformatics tools such as Prokka and MMseqs2 for genome annotation and feature extraction
+Applied AutoGluon to accelerate model experimentation, benchmarking, and baseline development
+Built automated model validation pipelines with performance thresholds, evaluation metrics, and benchmarking strategies aligned with healthcare ML best practices
+Implemented monitoring and governance concepts including data drift detection, model scope definition, and input data validation
+Contributed to SaMD-aligned ML practices emphasizing traceability, reproducibility, and risk-aware model development
+Result
+Delivered production-ready ML models integrated into a scalable healthcare platform
+Improved robustness and reliability of predictions through structured validation and benchmarking
+Established a reproducible ML lifecycle aligned with regulated healthcare AI expectations
 
-Situation:
-Feature engineering for clinical data is often manual, time-consuming, and difficult to scale across different prediction tasks.
+## ML/Data Engineer at Bearmind
+### AI-based Speech Recognition Pipeline
 
-Action:
-I built FeatEHR-LLM, an agentic framework that uses large language models to automatically generate and validate executable feature extraction functions based on task context and data descriptions.
+### Data lifecycle pipeline
 
-Result:
-The system consistently produced high-quality features that improved predictive performance across a range of clinical tasks, demonstrating my ability to leverage LLMs for automation and scalable machine learning workflows.
+## Data Scientist at EPFL
+### Yeast Microscopic Movie Analysis
 
-### Internship project at Roche (during PhD)
+### ML Pipeline for Cell Tracking
 
-Situation:
-Applying foundation models to real-world clinical data presents significant challenges, including the scale and complexity of longitudinal patient records, as well as the need for reliable evaluation across diverse use cases.
+## Master thesis in computational drug response prediction
 
-Action:
-During my internship at Roche, I built a scalable data pipeline to process a large longitudinal EHR database and transform it into a format suitable for machine learning. In collaboration with cross-functional teams, I also developed a comprehensive evaluation framework tailored to real-world clinical tasks, and applied modern foundation models through iterative experimentation guided by these evaluations.
+## Gene expression data analysis
 
-Result:
-This work enabled the effective application and assessment of advanced machine learning models in a real-world healthcare setting, while strengthening my ability to translate research into practice, collaborate across teams, and manage complex projects involving large-scale clinical data.
+## Drug response prediction
+
+## Software Developer at Hamravesh
+
+### Mobile software development
+

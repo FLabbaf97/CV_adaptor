@@ -1,91 +1,151 @@
-# Hojjat Karami
+# Farzaneh Labbaf
 
-Lausanne, Switzerland  
-Email: g.hojatkarami@gmail.com  
-Website: https://hojjatkarami.github.io  
-LinkedIn: https://linkedin.com/in/hojjat-karami  
-GitHub: https://github.com/hojjatkarami  
-Google Scholar: https://scholar.google.ca/citations?user=TcZu-VsAAAAJ&hl=en  
-Work Authorization: Valid Work Permit
+**Software Engineer in AI | Machine Learning Engineer**
 
-_Last updated: December 2025_
+- Rue de la Gare 19, Bussigny, Switzerland  
+- +41 76 267 68 24  
+- f.labbaf97@gmail.com  
+- https://linkedin.com/in/farzaneh-labbaf  
+
+---
 
 ## Summary
 
-Senior PhD researcher at EPFL with 4+ years of experience developing AI solutions for healthcare in EU-funded projects and at Roche. Expert in machine learning for structured electronic health records (EHRs) and clinical time series, with a specialized focus on synthetic data generation and foundational model development. Proficient in Generative AI and LLMs, including medium-scale pre- and post-training and domain adaptation. Skilled at designing large-scale data pipelines and orchestrating full MLOps lifecycles to deliver scalable solutions that enhance clinical decision-making and research efficiency.
+Machine Learning Engineer with strong experience building and deploying production-grade ML systems in biomedical and startup environments. Experienced in applied machine learning for genomics, phage therapy, speech, biological images, and graphs. Proficient in MLOps and scalable ML engineering across cloud and hybrid setups (AWS, Azure). Master’s in Computer Science, focused on working with complex, real-world data and delivering reliable ML solutions through close collaboration with domain experts.
 
-## Technical Skills
-
-- Programming & Databases: Python, SQL (PostgreSQL, AWS Redshift), Bash
-- ML & Deep Learning: PyTorch, Hugging Face, DeepSpeed, LangChain
-- MLOps & Infrastructure: Git, CI/CD, Docker, Slurm, Run:ai, W&B, Neptune
-- Data Science & Visualization: Pandas, Scikit-learn, Plotly, Dash
-- Languages: English (C1), French (B1), Persian (Native)
+---
 
 ## Education
 
-### Swiss Federal Institute of Technology Lausanne (EPFL)
-**PhD in Electrical Engineering (Artificial Intelligence)**  
-Jul 2021 - Apr 2026 | Lausanne, Switzerland  
-Thesis: Deep Learning Foundations for Irregularly Sampled Time Series in Electronic Health Records
+### Sharif University of Technology — Tehran, Iran  
+**Master's in Computer Science**  
+*09/2020 – 02/2023*  
+- Specialized in computational biology and data science
+- Thesis: Apply deep learning to personalized multi-drug response prediction on cancer cell-lines
 
-### Sharif University of Technology
-**B.Sc. & M.Sc. in Mechanical Engineering**  
-Oct 2014 - Jan 2021 | Tehran, Iran  
-Research Areas: Bio-signal Processing (IMU, EMG), Statistical Pattern Recognition & Machine Learning
+**Bachelor's in Computer Science**  
+*09/2015 – 09/2020*  
+- The most prestigious university in Iran
 
-## Experience
+---
 
-### Swiss Federal Institute of Technology Lausanne (EPFL)
-**PhD Research Assistant**  
-Jul 2021 - Apr 2026 | Lausanne, Switzerland  
-Signal Processing Laboratory, Supervisor: Prof. David Atienza (https://people.epfl.ch/david.atienza)
+## Skills
 
-Research Areas: Synthetic Data Generation, Time Series Analysis, Electronic Health Records, Foundation Models
+### Programming
+- Python, R, C++, Bash, Linux, SQL
 
-- Transformer-based neural point process for irregularly sampled time series
-- Image-based generative adversarial network (GAN) for synthetic time series generation
-- Transformer-based foundation model for generating structured EHRs with time series and clinical events
-- Automated feature engineering in EHR time series using large language models (LLMs)
+### Machine Learning
+- Deep Learning, CNNs  
+- Transformers, LLMs
+- Graph Neural Networks (GNNs)
 
-### Roche
-**AI Scientist Intern**  
-Jul 2025 - Oct 2025 | Basel, Switzerland  
-Project: Foundation Models for Electronic Health Records (EHRs)
+### Bioinformatics
+- Next-Generation Sequencing (NGS), Whole genome sequencing (WGS)
+- Multi-Omics data integration
+- Genomic & clinical data integration
 
-- Developed a multi-terabyte clinical data pipeline using Python/SQL and AWS Redshift, producing columnar Hugging Face datasets that significantly accelerated foundation model training
-- Developed a transformer-based foundation model for structured EHRs, enabling time series forecasting and clinical outcome prediction
-- Created an evaluation framework demonstrating superior predictive performance over baseline models in real-world clinical tasks
+### Frameworks
+- PyTorch, TensorFlow, Scikit-learn
+- MLflow, Dagster, SQLModel, FastAPI
 
-## Publications
+### MLOps & DevOps
+- CI/CD, Git, Docker
+- AWS, Azure, HPC, AWS architecture design
 
-For an up-to-date list, see Google Scholar: https://scholar.google.ca/citations?user=TcZu-VsAAAAJ&hl=en
+### Data Engineering
+- Data pipeline management
+- Workflow orchestration
 
-1. **SynEHRgy: Synthesizing Mixed-Type Structured EHRs using Decoder-Only Transformers**  
-   NeurIPS 2024 GenAI4HC Workshop  
-   **H. Karami**, D. Atienza, A. Ionescu  
-   Paper: https://arxiv.org/abs/2411.13428 | Code: https://github.com/hojjatkarami/SynEHRgy
+### Software Engineering
+- API development, Database
+- Full stack software development
+- Scalable ML infrastructure
+- System architecture design
+---
 
-2. **TEE4EHR: Transformer event encoder for better representation learning in EHRs**  
-   AI in Medicine, 2024  
-   **H. Karami**, D. Atienza, A. Ionescu  
-   Paper: https://www.sciencedirect.com/science/article/pii/S0933365724001453 | Code: https://github.com/esl-epfl/TEE4EHR
+## Work Experience
 
-3. **TimEHR: Image-based Time Series Generation for Electronic Health Records**  
-   JBHI, 2025  
-   **H. Karami**, M.-A. Hartley, D. Atienza, A. Ionescu  
-   Paper: https://ieeexplore.ieee.org/abstract/document/11027528/ | Code: https://github.com/esl-epfl/TimEHR
+### Machine Learning Engineer | MLOps  
+**PreciseHealth — Sion**  
+*02/2025 – Now*
+- Designed and developed machine learning models for personalized phage cocktail recommendation using bacterial and phage genomic data.
+- Led the end-to-end development of the PhageMatch platform, covering frontend, backend, database design, and DevOps.
+- Built and maintained scalable backend services and APIs with FastAPI and SQLModel, ensuring security, performance, and extensibility.
+- Designed and operated cloud infrastructure across Azure and AWS, including a full migration to AWS and optimization of compute, storage, and networking.
+- Architected the platform’s cloud environment to support production workloads, batch analysis, and secure data handling.
+- Conducted iterative ML experimentation and lifecycle management using MLflow to drive continuous model improvement.
+- Supervised and coordinated outsourced frontend development while aligning product, technical, and research requirements.
+- Collaborated closely with bioinformatics and microbiology teams to build interpretable, clinically relevant ML solutions from complex genomic data.
 
-4. **FeatEHR-LLM: Leveraging Large Language Models for Feature Engineering in Electronic Health Records**  
-   Under Review, 2025  
-   **H. Karami**, J.P. Thiran, D. Atienza, A. Ionescu
+### AI Software Developer  
+**Beamind — Lausanne**  
+*03/2024 – 09/2024*
+- Designed and deployed a robust AI-based Speech Recognition pipeline to automate a medical test.
+- Developed a high-precision data quality filter, achieving 86% accuracy in identifying unusable data.
+- Deployed production-ready speech recognition models on AWS EC2, enabling real-time inference.
+- Orchestrated automated data pipelines with Dagster for the dual-task test project, integrating inputs from three heterogeneous data sources.
+- Delivered full test coverage of ML components with unit tests, increasing reliability and maintainability.
+
+### ML Engineer | Data Scientist  
+**EPFL — Lausanne**  
+*04/2023 – 12/2023*
+- Created a Python package leveraging machine learning and image processing, reducing yeast microscopic movie analysis time by 50%.
+- Implemented a Graph Neural Network (GNN) model, achieving a 99% F1-score in cell tracking.
+- Led the full development lifecycle of an ML pipeline, labeling, model training, and deployment.
+- Developed an object tracking system for 400+ cells, achieving a 90% accuracy via feature optimization.
+
+### Software Developer | DevOps Engineer  
+**Hamravesh — Tehran**  
+*10/2017 – 02/2019*
+- Worked as a DevOps Engineer and front-end software developer, supporting the development and deployment of scalable mobile applications.
+- Developed and maintained React Native mobile apps across 5 Agile projects.
+- Designed and implemented robust CI/CD pipelines with automated testing, code quality checks, and Docker-based builds, reducing production bugs by 80%.
+- Deployed and managed containerized services using Docker and Kubernetes.
+
+---
+
+## Projects
+
+### Master Thesis Project: Computational Drug Response Prediction
+- Conducted pioneering deep-learning research on drug combinations' effect on cancer cell lines.
+- Combined multi-omics data and molecular drug data to develop personalized drug combinations.
+- Performed data quality checks and data visualization to ensure high-quality, reliable datasets.
+- Incorporated cluster computing for efficient ML model training and data-intensive tasks.
+- Enhanced the quality of embedded gene expression profiles by engineering a novel data cleaning algorithm, resolving 10+ data anomalies, and increasing precision by 4%.
+
+### Gene Expression Data Analysis
+- Obtained and preprocessed gene expression data from NCBI database for over 10,000 thyroid cancer cells and related information, along with quality control.
+- Performed statistical analysis, data processing and quality improvement using R and Python.
+- Identification of potential drugs and critical cellular pathways using gene co-expression and protein interaction networks, and visualization with CytoScape.
+
+---
+
+## Languages
+
+- Persian Native
+- English C1, Fluent
+- French A2, Basic
+
+---
+
+## Volunteer Work
+
+**The leadership of mountaineering teams**  
+Leadership of a 10-person team in climbing to Damavand, the highest summit in Iran with 5600 meters of height
+
+**President Of The Board Of Directors**  
+Sharif University Mountaineering Club Council with 1000+ members
+
+**Teaching**  
+- Teaching python to kids, Isfahan mathematics house
+- Teaching assistance in introduction to bioinformatics
+
+---
 
 ## Honors & Awards
 
-- Admitted to EPFL Excellence in Engineering (E3) for summer 2020, EPFL (2020)
-- Merit-based admission offer to M.Sc. program, Sharif University of Technology (2018)
-- Ranked 15th in the Nationwide University Entrance Exam (Top 15 among 200,000+), Iran's National Elites Foundation (2014)
+**MoonShot award in SDSC AI Hackathon**  
+Winning a price for DNA-clip project in a team of 5 people attending the SDSC generative AI Hackathon.
 
-## Extracurricular Activities
-
-- Head of Technical Committee, Sharif University Mountaineering Group: organized national-level expeditions, coordinated logistics, and trained 20+ members in safety and planning
+**Ranked 26th among 10,000+ participants**  
+The nationwide university entrance exam for Ms.Cs in Computer Science, 2020
