@@ -9,6 +9,8 @@ output/
 .cache/
 *.log
 cv_adapter.egg-info/
+.github/
+site/
 
 # Keep the Academic Pages susy output partials tracked.
 !site/_sass/vendor/susy/susy/output/

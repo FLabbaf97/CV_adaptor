@@ -15,7 +15,7 @@ Keep a clean pipeline from job capture to application readiness:
 Skills live under `.claude/skills/` and provide reusable workflows:
 
 - `career-ops`: command center for scanning, evaluating, tracking, and reporting on applications and offers.
-- `cv-tailor`: extract requirements into `insights.json` and adapt `cv_KARAMI.tex` for a saved job folder.
+- `cv-tailor`: extract requirements into `insights.json` and adapt `CV_farzaneh_labbaf.tex` for a saved job folder.
 - `motivation-letter`: generate a concise, role-aligned `motivation.tex` after CV tailoring.
 
 ## Setup

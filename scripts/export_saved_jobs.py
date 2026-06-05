@@ -312,7 +312,7 @@ def _scaffold_application(
 
     job_dir.mkdir(parents=True, exist_ok=False)
     _write_job_description(job_dir, job)
-    shutil.copy2(base_cv_path, job_dir / "cv_KARAMI.tex")
+    shutil.copy2(base_cv_path, job_dir / "CV_farzaneh_labbaf.tex")
     return True
 
 
@@ -368,7 +368,7 @@ def main() -> int:
 
     root_dir = Path(__file__).resolve().parents[1]
     applications_dir = root_dir / "applications"
-    base_cv_path = root_dir / "base_cv" / "cv_0326_KARAMI.tex"
+    base_cv_path = root_dir / "base_cv" / "CV_farzaneh_labbaf.tex"
 
     if not base_cv_path.exists():
         raise SystemExit(f"Base CV not found: {base_cv_path}")
