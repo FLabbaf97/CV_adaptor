@@ -1,0 +1,55 @@
+{
+  "summary": "Tailored a one-page general-purpose CV aligned to the synthetic combined role across 21 saved applications. Emphasis on production ML/AI, healthcare & life sciences, genomics/multi-omics, NLP/speech, MLOps, cloud, backend engineering, and regulated SaMD — without inventing credentials.",
+  "title_change": {
+    "from": "Software Engineer in AI | Machine Learning Engineer",
+    "to": "AI & Machine Learning Engineer | Healthcare & Life Sciences",
+    "why": "Broader headline matching the dominant cluster of roles (ML Engineer, AI Engineer, biomedical/scientific AI) while keeping healthcare/life sciences as the primary domain anchor."
+  },
+  "summary_change": {
+    "why": "Rewrote to cover production ML, biomedical data (genomics, multi-omics, imaging, speech/NLP), MLOps/cloud, backend engineering, regulated healthcare AI, and interdisciplinary collaboration — the highest-frequency themes across all job descriptions."
+  },
+  "work_experience_changes": {
+    "PreciseHealth": {
+      "kept": "SaMD, genomic ML, cloud architecture, validation pipelines, feature engineering, cross-functional collaboration",
+      "trimmed": "Removed duplicate networking/batch bullets to save space; merged cloud and infrastructure messaging",
+      "why": "PreciseHealth is the strongest anchor for healthcare AI, SaMD, genomics, MLOps, and full-stack delivery — core to most saved roles."
+    },
+    "bearmind": {
+      "changed": "Reframed speech pipeline as NLP/clinical medical assessment",
+      "trimmed": "Removed one bullet (unit tests) to fit one page",
+      "why": "NLP/ASR/clinical AI appears in Avelios, SUPSI, Limbic, and enterprise GenAI roles."
+    },
+    "EPFL": {
+      "trimmed": "Reduced from 4 to 3 bullets; kept GNN publication-worthy result and pipeline ownership",
+      "why": "Imaging/GNN/scientific ML supports biomedical research, SIB, Cyted, and Novartis-type roles."
+    },
+    "Hamravesh": {
+      "trimmed": "Reduced from 4 to 2 bullets (CI/CD, Docker/Kubernetes only)",
+      "why": "Early-career DevOps evidence supports MLOps/cloud requirements without consuming page space."
+    }
+  },
+  "added_sections": {
+    "publications": {
+      "why": "Multiple roles (GSK, Relation, SIB, SUPSI, Avelios) value publications; base cv.md includes a 2026 Bioinformatics Advances paper not in the shortest tailored versions."
+    }
+  },
+  "removed_or_condensed": {
+    "projects": "Condensed master thesis to 4 bullets; gene expression project to 2 bullets",
+    "volunteer": "Shortened mountaineering bullet",
+    "skills": "Reorganized into broader categories covering ML, bioinformatics, MLOps, backend, and healthcare regulatory keywords",
+    "hamravesh_react_native": "Removed React Native bullet — less relevant to combined AI/ML focus"
+  },
+  "skills_added_with_evidence": [
+    "NLP / Speech Recognition — bearmind medical ASR pipeline",
+    "Responsible AI / validation-oriented ML — PreciseHealth SaMD context",
+    "Production ML Systems — all recent roles",
+    "Workflow Orchestration — Dagster at bearmind",
+    "Clinical AI / Healthcare AI — PreciseHealth, bearmind"
+  ],
+  "skills_not_added": [
+    "LangGraph / LangChain — no direct production evidence in CV",
+    "GCP Document AI — no GCP production evidence",
+    "Federated ML — not in experience",
+    "German — not claimed"
+  ]
+}

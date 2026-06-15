@@ -1,0 +1,34 @@
+{
+  "important to have": [
+    "Strong Python programming and production software engineering",
+    "PyTorch / TensorFlow deep learning and scikit-learn classical ML",
+    "End-to-end ML lifecycle: training, validation, deployment, monitoring",
+    "MLOps and cloud deployment (AWS, Azure, Docker, CI/CD)",
+    "Data pipelines and workflow orchestration (Dagster, MLflow)",
+    "Backend/API development (FastAPI, SQL, database design)",
+    "Biomedical or healthcare data experience (genomics, multi-omics, clinical)",
+    "Master's degree in CS or computational biology",
+    "Cross-functional collaboration and stakeholder communication",
+    "English fluency",
+    "Regulated or compliance-aware AI development (healthcare/medtech)",
+    "NLP, speech, or transformer-based ML applications"
+  ],
+  "nice to have": [
+    "LLMs, agentic AI, RAG, multi-agent orchestration",
+    "Scientific publications in ML/bioinformatics",
+    "Kubernetes and HPC / distributed training",
+    "GCP and document-processing AI pipelines",
+    "French or German language skills",
+    "Consulting or client-facing delivery",
+    "Feature stores and advanced LLMOps governance",
+    "Federated learning",
+    "Reinforcement learning",
+    "Mass spectrometry or analytical chemistry software"
+  ],
+  "language requirements": [
+    "English: required, fluent (C1)",
+    "French: preferred in some roles (candidate: A2 basic)",
+    "German: preferred in some roles (candidate: not listed)"
+  ],
+  "match score": "88%"
+}

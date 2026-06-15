@@ -1,0 +1,320 @@
+\documentclass[9pt, letterpaper]{extarticle}
+
+% ============================================================================
+% PACKAGES
+% ============================================================================
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+
+% Page Layout - minimal margins for maximum space
+\usepackage[
+    ignoreheadfoot,
+    top=0.9 cm,
+    bottom=0.9 cm,
+    left=0.9 cm,
+    right=0.9cm,
+    footskip=0.3cm,
+]{geometry}
+
+% Formatting
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{amsmath}
+
+% Colors and Icons
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage{fontawesome5}
+
+% Links and Metadata
+\usepackage[
+    pdftitle={Farzaneh Labbaf's CV},
+    pdfauthor={Farzaneh Labbaf},
+    pdfcreator={LaTeX},
+    colorlinks=true,
+    urlcolor=primaryColor,
+]{hyperref}
+\usepackage{bookmark}
+
+% Layout Utilities
+\usepackage{graphicx}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{setspace}
+
+% ============================================================================
+% ATS COMPATIBILITY
+% ============================================================================
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+% ============================================================================
+% DOCUMENT SETTINGS
+% ============================================================================
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\renewcommand{\baselinestretch}{1.03}
+
+% Section Title Formatting - line first, then title below
+\titleformat{\section}{
+    \vspace{0.18cm}\color{primaryColor}\titlerule\vspace{0.2cm}\color{gray}\bfseries\large
+}{}{0pt}{}
+
+\titlespacing{\section}{
+    0pt
+}{
+    0pt
+}{
+    0.15cm
+}
+
+% Custom Bullet Points
+\renewcommand\labelitemi{$\circ$}
+
+% Compact itemize settings
+\setlist[itemize]{
+    topsep=0.01cm,
+    parsep=0pt,
+    partopsep=0pt,
+    itemsep=0.01cm,
+    leftmargin=0.3cm,
+    labelsep=0.15cm
+}
+
+% ============================================================================
+% CUSTOM COMMANDS
+% ============================================================================
+
+% External Links with Icon
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.1ex}{\small \faExternalLink*}}}
+
+% ============================================================================
+% DOCUMENT BEGINS
+% ============================================================================
+\begin{document}
+
+% ============================================================================
+% HEADER - Photo on left, then two columns: name/title and contact info
+% ============================================================================
+\noindent
+\begin{minipage}[t]{0.12\textwidth}
+    \vspace{0pt}
+    \includegraphics[width=\textwidth]{/Users/Farzaneh/Documents/cv/cv_adapter/photo/Profile_CV_cropped-removebg-preview.png}
+\end{minipage}
+\hspace{0.3cm}
+\begin{minipage}[t]{0.56\textwidth}
+    \vspace{0pt}
+    \textbf{\Huge Farzaneh Labbaf} \\
+    \vspace{0.12cm}
+    \Large\textit{AI \& Machine Learning Engineer | Healthcare \& Life Sciences}
+\end{minipage}
+\hspace{0.02\textwidth}
+\begin{minipage}[t]{0.28\textwidth}
+    \vspace{0pt}
+    \small
+    \faMapMarker* Bussigny, Switzerland \\[0.08cm]
+    % \faPhone* +41-762676824 \\[0.08cm]
+    \faEnvelope[regular] \hrefWithoutArrow{mailto:f.labbaf97@gmail.com}{f.labbaf97@gmail.com} \\[0.08cm]
+    \faLinkedinIn\hspace{0.2em}\hrefWithoutArrow{https://linkedin.com/in/farzaneh-labbaf}{farzaneh-labbaf} \\[0.08cm]
+    Holding a valid Swiss work permit.
+\end{minipage}
+
+    \vspace{0.12cm}
+
+% ============================================================================
+% TWO COLUMN LAYOUT - Left column is 2/3 width, Right column is 1/3 width
+% ============================================================================
+\noindent
+\begin{minipage}[t]{0.64\textwidth}
+\raggedright
+
+% ============================================================================
+% LEFT COLUMN
+% ============================================================================
+
+% SUMMARY
+\section{SUMMARY}
+\small
+Machine Learning Engineer with experience building and deploying production-grade AI systems in healthcare, med-tech, and research environments. Background spans deep learning on genomic, multi-omics, biological image, speech, and graph data, plus backend services, cloud infrastructure, and MLOps across AWS and Azure. Master's in Computer Science with a computational biology focus. Experienced in validation-oriented, regulated healthcare AI (SaMD) and in collaborating with clinical, bioinformatics, and engineering teams.
+
+% WORK EXPERIENCE
+\section{WORK EXPERIENCE}
+
+\textbf{MACHINE LEARNING ENGINEER | MLOps} \\
+\textbf{PreciseHealth, Sion} \hfill \textit{02/2025- Now}
+\small
+\begin{itemize}
+    \item Designed and developed ML models for personalized phage cocktail recommendation using bacterial and phage WGS data, translating genomic data into clinically relevant treatment recommendations.
+    
+    \item Contributed to an AI-enabled Software as a Medical Device (SaMD) platform for CE/FDA pathways, applying QMS alignment, validation, traceability, and risk-aware AI development practices.
+    
+    \item Led end-to-end development of the PhageMatch platform spanning backend (FastAPI, SQLModel), database architecture, cloud infrastructure, DevOps, and ML integration.
+        
+    \item Architected and operated cloud infrastructure across AWS and Azure, leading migration to AWS and reducing operational costs by 25\% while maintaining performance and compliance.
+    
+    \item Built automated ML validation and benchmarking pipelines with defined metrics, thresholds, and model governance for healthcare AI.
+    
+    \item Performed genomic feature engineering and large-scale sequence analysis using Prokka and MMseqs2; processed genomic datasets via scalable cloud batch pipelines.
+        
+    \item Collaborated with bioinformatics, microbiology, regulatory, product, and engineering teams; coordinated outsourced frontend development.
+\end{itemize}
+\vspace{0.2cm}
+
+\textbf{AI SOFTWARE DEVELOPER} \\
+\textbf{bearmind, Lausanne} \hfill \textit{03/2024 - 09/2024}
+\small
+\begin{itemize}
+    \item Designed and deployed an NLP-based speech recognition pipeline to automate a clinical medical assessment in a healthcare setting.
+    \item Developed a high-precision data quality filter, achieving 86\% accuracy in identifying unusable data.
+    \item Deployed production-ready speech recognition models on AWS, enabling real-time inference.
+    \item Orchestrated automated data pipelines with Dagster, integrating inputs from three heterogeneous data sources.
+\end{itemize}
+
+\vspace{0.2cm}
+
+\textbf{ML ENGINEER | DATA SCIENTIST} \\
+\textbf{EPFL, Lausanne} \hfill \textit{04/2023 - 12/2023}
+\small
+\begin{itemize}
+    \item Created a Python package leveraging ML and image processing, reducing yeast microscopic movie analysis time by 50\%.
+    \item Implemented a Graph Neural Network (GNN) model, achieving a 99\% F1-score in cell tracking.
+    \item Led the full ML pipeline lifecycle: labeling, model training, and deployment.
+\end{itemize}
+
+\vspace{0.2cm}
+
+\textbf{SOFTWARE DEVELOPER | DEVOPS ENGINEER} \\
+\textbf{Hamravesh, Tehran} \hfill \textit{10/2017- 02/2019}
+\small
+\begin{itemize}
+    \item Designed and implemented CI/CD pipelines with automated testing and Docker-based builds, reducing production bugs by 80\%.
+    \item Deployed and managed containerized services using Docker and Kubernetes.
+\end{itemize}
+
+% PUBLICATIONS
+\section{PUBLICATIONS}
+\small
+Zelic M, Gligorovski V, Labbaf F, et al. Love-thy-neighbor: neural networks for tracking and lineage tracing in budding yeast. \textit{Bioinformatics Advances}. 2026;6(1). \href{https://doi.org/10.1093/bioadv/vbag067}{doi:10.1093/bioadv/vbag067}
+
+% PROJECTS
+\section{PROJECTS}
+
+\textbf{Master Thesis: Computational Drug Response Prediction}
+\small
+\begin{itemize}
+    \item Conducted deep-learning research on personalized multi-drug response prediction for cancer cell lines using multi-omics and molecular drug data.
+    \item Engineered a novel data cleaning algorithm for gene expression profiles, resolving 10+ anomalies and increasing precision by 4\%.
+    \item Performed data quality checks, visualization, and cluster computing for large-scale model training.
+\end{itemize}
+
+\textbf{Gene Expression Data Analysis}
+\small
+\begin{itemize}
+    \item Preprocessed gene expression data from NCBI for 10,000+ thyroid cancer cells with quality control and statistical analysis in R and Python.
+    \item Identified potential drugs and cellular pathways using co-expression and protein interaction networks.
+\end{itemize}
+
+\end{minipage}
+\hspace{0.4cm}
+\begin{minipage}[t]{0.32\textwidth}
+\raggedright
+
+% ============================================================================
+% RIGHT COLUMN
+% ============================================================================
+
+% SKILLS
+\section{SKILLS}
+\small
+
+\textbf{Programming:} \\[0.025cm]
+Python, SQL, Bash, R, C++, Linux
+
+\vspace{0.08cm}
+\textbf{Machine Learning \& AI:} \\[0.025cm]
+Deep Learning, CNNs, Transformers, LLMs, GNNs, NLP, Speech Recognition, Feature Engineering, Model Validation, AutoML
+
+\vspace{0.08cm}
+\textbf{Bioinformatics \& Data Science:} \\[0.025cm]
+NGS, WGS, Multi-Omics Integration, Genomic Data Analysis, Biomarker Discovery, Clinical Data Integration
+
+\vspace{0.08cm}
+\textbf{Frameworks \& Tools:} \\[0.025cm]
+PyTorch, TensorFlow, Scikit-learn, FastAPI, SQLModel, MLflow, Dagster, AutoGluon, Prokka, MMseqs2
+
+\vspace{0.08cm}
+\textbf{Cloud, DevOps \& MLOps:} \\[0.025cm]
+AWS, Azure, Docker, Kubernetes, CI/CD, ECS, EC2, S3, RDS, Cloud Architecture, Workflow Orchestration, HPC
+
+\vspace{0.08cm}
+\textbf{Software Engineering:} \\[0.025cm]
+Backend \& API Development, Database Design, System Architecture, Production ML Systems, Full-Stack Development
+
+\vspace{0.08cm}
+\textbf{Healthcare AI \& Regulatory:} \\[0.025cm]
+SaMD, Healthcare AI, Clinical AI, QMS, AI Validation, Risk-Aware ML, Responsible AI
+
+% EDUCATION
+\section{EDUCATION}
+\small
+
+\textbf{MASTER'S IN COMPUTER SCIENCE} \\[0.025cm]
+\textbf{Sharif University of Technology, Tehran, Iran} \\[0.025cm]
+\textit{09/2020 - 02/2023} \\[0.025cm]
+Specialized in computational biology and data science \\[0.025cm]
+\textit{Thesis:} Apply deep learning to personalized multi-drug response prediction on cancer cell-lines
+
+\vspace{0.12cm}
+\textbf{BACHELOR'S IN COMPUTER SCIENCE} \\[0.025cm]
+\textbf{Sharif University of Technology, Tehran, Iran} \\[0.025cm]
+\textit{09/2015 - 09/2020} \\[0.025cm]
+The most prestigious university in Iran
+
+% LANGUAGES
+\section{LANGUAGES}
+\small
+
+Persian Native \\[0.025cm]
+English C1, Fluent \\[0.025cm]
+French A2, Basic
+
+% HONORS AND AWARDS
+\section{HONORS AND AWARDS}
+\small
+
+\textbf{MoonShot award in SDSC AI Hackathon} \\[0.025cm]
+Winning a price for DNA-clip project in a team of 5 people attending the SDSC generative AI Hackathon.
+
+\vspace{0.08cm}
+\textbf{Ranked 26th among 10,000+ participants} \\[0.025cm]
+The nationwide university entrance exam for Ms.Cs in Computer Science, 2020
+
+% VOLUNTEER WORKS
+\section{VOLUNTEER WORKS}
+\small
+
+\textbf{The leadership of mountaineering teams} \\[0.025cm]
+Leadership of a 10-person team climbing Damavand (5,600 m).
+
+\vspace{0.08cm}
+\textbf{President Of The Board Of Directors} \\[0.025cm]
+Sharif University Mountaineering Club Council with 1000+ members
+
+\vspace{0.08cm}
+\textbf{Teaching} \\[0.025cm]
+Teaching python to kids, Isfahan mathematics house \\[0.025cm]
+Teaching assistance in introduction to bioinformatics
+
+\end{minipage}
+
+\end{document}
