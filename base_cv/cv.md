@@ -46,7 +46,7 @@ Machine Learning Engineer with strong experience building and deploying producti
 
 ### Frameworks
 - PyTorch, TensorFlow, Scikit-learn
-- MLflow, Dagster, SQLModel, FastAPI
+- Dagster, SQLModel, FastAPI
 
 ### MLOps & DevOps
 - CI/CD, Git, Docker
@@ -101,6 +101,12 @@ Machine Learning Engineer with strong experience building and deploying producti
 - Developed and maintained React Native mobile apps across 5 Agile projects.
 - Designed and implemented robust CI/CD pipelines with automated testing, code quality checks, and Docker-based builds, reducing production bugs by 80%.
 - Deployed and managed containerized services using Docker and Kubernetes.
+
+---
+
+## Publications
+
+Zelic M, Gligorovski V, Labbaf F, et al. Love-thy-neighbor: neural networks for tracking and lineage tracing in budding yeast. *Bioinformatics Advances*. 2026;6(1). https://doi.org/10.1093/bioadv/vbag067
 
 ---
 
