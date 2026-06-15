@@ -78,11 +78,11 @@ Machine Learning Engineer with strong experience building and deploying producti
 - Collaborated closely with bioinformatics and microbiology teams to build interpretable, clinically relevant ML solutions from complex genomic data.
 
 ### AI Software Developer  
-**Beamind — Lausanne**  
+**bearmind — Lausanne**  
 *03/2024 – 09/2024*
 - Designed and deployed a robust AI-based Speech Recognition pipeline to automate a medical test.
 - Developed a high-precision data quality filter, achieving 86% accuracy in identifying unusable data.
-- Deployed production-ready speech recognition models on AWS EC2, enabling real-time inference.
+- Deployed production-ready speech recognition models on AWS , enabling real-time inference.
 - Orchestrated automated data pipelines with Dagster for the dual-task test project, integrating inputs from three heterogeneous data sources.
 - Delivered full test coverage of ML components with unit tests, increasing reliability and maintainability.
 
