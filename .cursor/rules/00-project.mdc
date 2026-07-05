@@ -57,4 +57,5 @@ Note: `\graphicspath` in the base CV points to the photo/ folder in the repo roo
 | "tailor CV for [folder]" | Runs cv-tailor: creates insights.json, updates CV, creates changes.json |
 | "write motivation letter for [folder]" | Runs motivation-letter: creates motivation.tex |
 | "report on [folder]" | Generates a CV–JD match report.md |
+| "rank jobs" / "sort applications by fit" | Runs job-ranking: scores all active applications 1–5 and outputs a priority table |
 | "export saved jobs from Notion" | Runs the Python export script |

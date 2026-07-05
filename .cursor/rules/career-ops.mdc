@@ -12,6 +12,7 @@ Determine which sub-task the user is requesting:
 | User intent | Mode |
 |---|---|
 | "report on [folder]" or "how does my CV match [folder]" | **report** |
+| "rank jobs" / "sort applications" / "which jobs to prioritize" | **rank** (see job-ranking skill) |
 | "evaluate this job" or paste a JD | **evaluate** |
 | "compare these jobs" or "which offer is better" | **compare** |
 | "show all applications" or "application tracker" | **tracker** |
@@ -86,6 +87,14 @@ Save to `applications/{folder}/report.md`:
 ```
 
 Confirm the path and display match score + top 3 actions inline.
+
+---
+
+## Rank Mode
+
+**Trigger:** user asks to rank, sort, or prioritize all saved applications (e.g. "rank jobs", "sort by fit and interest").
+
+Read and follow `.claude/skills/job-ranking/SKILL.md` end-to-end. Do not duplicate scoring logic here.
 
 ---
 
