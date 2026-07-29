@@ -32,59 +32,87 @@ Machine Learning Engineer with strong experience building and deploying producti
 ## Skills
 
 ### Programming
-- Python, R, C++, Bash, Linux, SQL
 
-### Machine Learning
-- Deep Learning, CNNs  
-- Transformers, LLMs
+- Python, R, C++, Bash, SQL, Linux
+
+### Machine Learning & AI
+
+- Deep Learning, CNNs, Transformers, Large Language Models (LLMs), Speech Recognition (ASR)
+- Hugging Face, Langchain, OpenAI
+- Prompt Engineering, LLM Integration
+- Retrieval-Augmented Generation (RAG), Vector Databases, Graph Embeddings
+- Model Evaluation, Transfer Learning, LLM evaluation, Fine-tuning
+- AI-Assisted Software Development, AI-Agents, MCP
 - Graph Neural Networks (GNNs)
 
 ### Bioinformatics
-- Next-Generation Sequencing (NGS), Whole genome sequencing (WGS)
-- Multi-Omics data integration
-- Genomic & clinical data integration
 
-### Frameworks
+- Next-Generation Sequencing (NGS), Whole Genome Sequencing (WGS)
+- Multi-Omics Data Integration
+- Genomic & Clinical Data Integration
+
+### Frameworks & Libraries
+
 - PyTorch, TensorFlow, Scikit-learn
-- Dagster, SQLModel, FastAPI
+- FastAPI, SQLModel, Dagster
 
 ### MLOps & DevOps
+
 - CI/CD, Git, Docker
-- AWS, Azure, HPC, AWS architecture design
+- AWS, Azure, HPC
+- AWS Architecture Design
+- Model Deployment & Experiment Tracking, model monitoring, model validation
 
 ### Data Engineering
-- Data pipeline management
-- Workflow orchestration
+
+- Data Pipeline Management
+- Workflow Orchestration
+- Data Validation & Processing
 
 ### Software Engineering
-- API development, Database
-- Full stack software development
-- Scalable ML infrastructure
-- System architecture design
+
+- API Development
+- Database Design
+- Full-Stack Software Development
+- Scalable ML Infrastructure
+- System Architecture Design
+- AI-Assisted Software Development (Cursor)
+
 ---
 
 ## Work Experience
 
-### Machine Learning Engineer | MLOps  
-**PreciseHealth — Sion**  
-*02/2025 – Now*
-- Designed and developed machine learning models for personalized phage cocktail recommendation using bacterial and phage genomic data.
-- Led the end-to-end development of the PhageMatch platform, covering frontend, backend, database design, and DevOps.
-- Built and maintained scalable backend services and APIs with FastAPI and SQLModel, ensuring security, performance, and extensibility.
-- Designed and operated cloud infrastructure across Azure and AWS, including a full migration to AWS and optimization of compute, storage, and networking.
-- Architected the platform’s cloud environment to support production workloads, batch analysis, and secure data handling.
-- Conducted iterative ML experimentation and lifecycle management using MLflow to drive continuous model improvement.
-- Supervised and coordinated outsourced frontend development while aligning product, technical, and research requirements.
-- Collaborated closely with bioinformatics and microbiology teams to build interpretable, clinically relevant ML solutions from complex genomic data.
+### Machine Learning Engineer | MLOps
 
-### AI Software Developer  
-**bearmind — Lausanne**  
+**Precise Health SA — Sion**
+*02/2025 – Present*
+
+- Designed and developed machine learning models for personalized phage cocktail recommendation using bacterial and phage genomic data.
+- Led the end-to-end development of the PhageMatch platform, covering frontend, backend, database design, cloud infrastructure, and DevOps.
+- Built and maintained scalable backend services and APIs with FastAPI and SQLModel, ensuring security, performance, and extensibility.
+- Designed, migrated, and operated cloud infrastructure across Azure and AWS, optimizing compute, storage, networking, and deployment workflows.
+- Architected the platform’s cloud environment to support production workloads, batch genomic analysis, and secure handling of clinical data.
+- Conducted iterative ML experimentation and lifecycle management using reproducible pipelines and configurable workflows to drive continuous model improvement.
+- Designed AI-assisted experimentation workflows that leverage LLMs to generate experiment configurations, execute training pipelines, analyze results, and summarize findings with minimal manual intervention.
+- Established AI-assisted development practices by defining reusable Cursor rules and specialized AI workflows for code generation, code review, production readiness, and collaborative software development.
+- Built modular, configuration-driven ML infrastructure that enables rapid experimentation and seamless integration with AI coding assistants.
+- Supervised and coordinated outsourced frontend development while aligning product, technical, and research requirements.
+- Collaborated closely with bioinformatics and microbiology teams to build interpretable, clinically relevant AI solutions from complex genomic data.
+
+### AI Software Developer
+
+**Bearmind — Lausanne**
 *03/2024 – 09/2024*
-- Designed and deployed a robust AI-based Speech Recognition pipeline to automate a medical test.
-- Developed a high-precision data quality filter, achieving 86% accuracy in identifying unusable data.
-- Deployed production-ready speech recognition models on AWS , enabling real-time inference.
-- Orchestrated automated data pipelines with Dagster for the dual-task test project, integrating inputs from three heterogeneous data sources.
-- Delivered full test coverage of ML components with unit tests, increasing reliability and maintainability.
+
+- Designed and deployed a production-ready transformer-based Automatic Speech Recognition (ASR) pipeline to automate a medical assessment.
+- Customized open-source Hugging Face speech recognition models through inference-time adaptation, contextual inputs, and domain-specific post-processing for clinical use cases.
+- Integrated LLM-based post-processing to normalize and refine transcription outputs for downstream medical analysis and task-specific formatting.
+- Developed a high-precision data quality filter, achieving 86% accuracy in identifying unusable recordings prior to inference.
+- Designed task-specific evaluation metrics and validation pipelines focused on semantic correctness for counting tasks rather than conventional word-level transcription accuracy.
+- Evaluated model adaptation strategies, including transfer learning and fine-tuning approaches for domain-specific speech recognition tasks.
+- Deployed production-ready speech recognition models on AWS, enabling scalable real-time inference.
+- Orchestrated automated ML data pipelines with Dagster, integrating data from three heterogeneous sources for model inference and evaluation.
+- Delivered comprehensive unit test coverage for ML components, increasing reliability, maintainability, and deployment confidence.
 
 ### ML Engineer | Data Scientist  
 **EPFL — Lausanne**  
@@ -137,7 +165,7 @@ Zelic M, Gligorovski V, Labbaf F, et al. Love-thy-neighbor: neural networks for 
 ## Volunteer Work
 
 **The leadership of mountaineering teams**  
-Leadership of a 10-person team in climbing to Damavand, the highest summit in Iran with 5600 meters of height
+Leadership of a 10-person team in climbing to Damavand, a summit with 5600 meters altitude
 
 **President Of The Board Of Directors**  
 Sharif University Mountaineering Club Council with 1000+ members
