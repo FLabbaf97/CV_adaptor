@@ -1,7 +1,11 @@
 ---
-description: "Motivation letter workflow. Use when the user asks to write, create, or generate a cover letter or motivation letter for a specific job application folder. Produces a single-page motivation.tex using the adapted CV, job description, and personal narrative context. Trigger phrases: write motivation letter, create cover letter, generate motivation.tex, application letter, one-page letter."
-globs: ["applications/**/motivation.tex", "applications/**/descriptions.md", "base_cv/context_for_cover_letter.md"]
-alwaysApply: false
+name: motivation-letter
+description: >-
+  Motivation letter workflow. Use when the user asks to write, create, or generate
+  a cover letter or motivation letter for a specific job application folder.
+  Produces a single-page motivation.tex using the adapted CV, job description,
+  and personal narrative context. Trigger phrases: write motivation letter, create
+  cover letter, generate motivation.tex, application letter, one-page letter.
 ---
 
 # Motivation Letter Workflow
@@ -44,7 +48,7 @@ Build an internal requirement → evidence map:
 - For each core requirement: find the strongest matching project, role, or outcome from the CV or context file.
 - Exclude claims not explicitly supported in either source.
 - Prefer concrete outcomes (metrics, deliverables, scope) over generic statements.
-- if the position is in a small company or a startup, make sure to highlight my experience in startups and working in a fast-paced environment.
+- If the position is in a small company or a startup, highlight experience in startups and working in a fast-paced environment.
 
 ## Step 3 — Draft the letter (4–5 paragraphs)
 

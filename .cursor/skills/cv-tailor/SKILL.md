@@ -1,7 +1,12 @@
 ---
-description: "CV tailoring workflow. Use when the user asks to tailor, adapt, or customize a CV for a specific job application folder under applications/. Extracts role requirements into insights.json, scores CV–JD alignment, and edits CV_farzaneh_labbaf.tex for the target role. Use the context_for_cover_letter.md to guide the tailoring. Trigger phrases: tailor CV, adapt resume, job-specific CV, ATS alignment, tailor application CV, customize CV."
-globs: ["applications/**/CV_farzaneh_labbaf.tex", "applications/**/descriptions.md", "applications/**/insights.json", "base_cv/context_for_cover_letter.md"]
-alwaysApply: false
+name: cv-tailor
+description: >-
+  CV tailoring workflow. Use when the user asks to tailor, adapt, or customize a
+  CV for a specific job application folder under applications/. Extracts role
+  requirements into insights.json, scores CV–JD alignment, and edits
+  CV_farzaneh_labbaf.tex for the target role. Use context_for_cover_letter.md
+  to guide tailoring. Trigger phrases: tailor CV, adapt resume, job-specific CV,
+  ATS alignment, tailor application CV, customize CV.
 ---
 
 # CV Tailor Workflow
