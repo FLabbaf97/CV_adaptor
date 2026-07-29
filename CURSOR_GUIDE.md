@@ -11,9 +11,11 @@ Cursor loads **project context** from `.cursor/rules/` and **workflow skills** f
 | File | Type | When loaded | Triggers |
 |---|---|---|---|
 | `00-project.mdc` | Rule — always on | Every chat | Project context, conventions |
-| `career-ops.mdc` | Rule — on request | Agent-requested | "report", "tracker", "evaluate job", "export" |
 | `cv-tailor/SKILL.md` | Skill | When tailoring a CV | "tailor CV", "adapt resume" |
 | `motivation-letter/SKILL.md` | Skill | When writing a cover letter | "write motivation letter", "cover letter" |
+| `job-ranking/SKILL.md` | Skill | When ranking applications | "rank jobs", "sort by fit" |
+| `interview-prep/SKILL.md` | Skill | When preparing for interviews | "prepare for interview" |
+| `interview-feedback/SKILL.md` | Skill | When reviewing answers | "feedback on my interview answers" |
 
 ---
 
@@ -112,22 +114,19 @@ Cursor will create `report.md` in that folder with:
 
 ## Additional commands
 
+### Rank applications by fit
+> "Rank my jobs" / "Sort applications by fit"
+
 ### See all application statuses
 > "Show me an overview of all my applications"
 
 Cursor will list every folder under `applications/` and show which files are present (tailored CV, letter, report).
 
-### Evaluate a new job (without saving it yet)
-Paste a job description directly and say:
-> "Evaluate this job against my CV"
-
-Cursor will give you a quick A–F grade and role fit score.
-
-### Compare two jobs
-> "Compare the GSK and EthonAI applications — which is the better fit?"
-
 ### Update the motivation letter
 > "Update the motivation letter for GSK to add more emphasis on MLOps"
+
+### Interview prep
+> "Prepare me for interview with the GSK application"
 
 ---
 

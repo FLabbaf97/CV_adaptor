@@ -2,8 +2,7 @@
 
 **Software Engineer in AI | Machine Learning Engineer**
 
-- Rue de la Gare 19, Bussigny, Switzerland  
-- +41 76 267 68 24  
+- Bussigny, Switzerland  
 - f.labbaf97@gmail.com  
 - https://linkedin.com/in/farzaneh-labbaf  
 

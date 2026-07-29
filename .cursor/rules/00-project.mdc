@@ -55,7 +55,7 @@ Note: `\graphicspath` in the base CV points to the photo/ folder in the repo roo
 
 ## Available AI Workflows
 
-Skills live in `.cursor/skills/`; career-ops routing lives in `.cursor/rules/career-ops.mdc`.
+Skills live in `.cursor/skills/` and `.claude/skills/`.
 
 | What you say | What happens |
 |---|---|
