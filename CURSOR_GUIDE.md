@@ -6,16 +6,14 @@ This guide explains how to use Cursor's AI agent to tailor your CV, write motiva
 
 ## How it works
 
-Cursor reads a set of **rules** from `.cursor/rules/` every time you chat with it. These rules give the AI detailed, step-by-step instructions for each workflow. You don't need to paste instructions or explain the project — it already knows the file structure, conventions, and guardrails.
+Cursor loads **project context** from `.cursor/rules/` and **workflow skills** from `.cursor/skills/` when you ask for a task. You don't need to paste instructions or explain the project — it already knows the file structure, conventions, and guardrails.
 
-There are four rules:
-
-| Rule file | Always on? | Triggers |
-|---|---|---|
-| `00-project.mdc` | Yes — loaded every chat | Project context, conventions |
-| `cv-tailor.mdc` | Auto when application files are open | "tailor CV", "adapt resume" |
-| `motivation-letter.mdc` | Auto when application files are open | "write motivation letter", "cover letter" |
-| `career-ops.mdc` | Agent-requested or manual | "report", "tracker", "evaluate job", "export" |
+| File | Type | When loaded | Triggers |
+|---|---|---|---|
+| `00-project.mdc` | Rule — always on | Every chat | Project context, conventions |
+| `career-ops.mdc` | Rule — on request | Agent-requested | "report", "tracker", "evaluate job", "export" |
+| `cv-tailor/SKILL.md` | Skill | When tailoring a CV | "tailor CV", "adapt resume" |
+| `motivation-letter/SKILL.md` | Skill | When writing a cover letter | "write motivation letter", "cover letter" |
 
 ---
 
@@ -136,7 +134,7 @@ Cursor will give you a quick A–F grade and role fit score.
 ## Pro tips
 
 - **Reference the folder directly** in your message — e.g. `applications/GSK_...` — to help Cursor identify the right context without ambiguity.
-- **Open the application files** in the editor before chatting; Cursor auto-attaches the cv-tailor and motivation-letter rules when those files are visible.
+- **Name the workflow** in your message (e.g. "tailor CV for …") so Cursor loads the right skill.
 - **Use `@` to include files** if needed: type `@applications/GSK_.../descriptions.md` in your message to pin it to context.
 - The base CV at `base_cv/CV_farzaneh_labbaf.tex` is **never modified** by any workflow. Per-job copies live in each application folder.
 - `insights.json` is only created once per folder. To re-analyse the role (e.g. the JD was updated), delete the file and tailor again.

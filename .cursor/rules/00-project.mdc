@@ -12,9 +12,9 @@ This workspace fetches job listings tagged "Saved" from a Notion database, scaff
 ## File Architecture
 
 ```
-base_cv/CV_farzaneh_labbaf.tex          ← master ATS-compatible LaTeX CV (NEVER edit directly for a job)
+base_cv/CV_farzaneh_labbaf.tex          ← master ATS-compatible LaTeX CV (NEVER edit directly for a job), used as a template for all job applications.
 base_cv/context_for_cover_letter.md     ← personal narrative and motivation context
-base_cv/cv.md                           ← plain-text CV summary
+base_cv/cv.md                           ← plain-text CV materials, skills, experience, projects, publications, etc.
 scripts/export_saved_jobs.py            ← Notion → applications/ scaffolding script
 applications/{slug}_{YYYY-MM-DD}/       ← one folder per job application
     descriptions.md                     ← raw job description (from Notion)
@@ -23,6 +23,9 @@ applications/{slug}_{YYYY-MM-DD}/       ← one folder per job application
     changes.json                        ← summary of CV edits made (created by cv-tailor workflow)
     motivation.tex                      ← role-specific cover letter (created by motivation-letter workflow)
     report.md                           ← CV–JD match report
+    position_research.md                ← company/lab research (interview-prep)
+    application_fit.md                  ← fit + motivation brief (interview-prep)
+    interview_qa.md                     ← practice Q&A; answers + feedback (interview-prep / interview-feedback)
     build/                              ← latexmk compilation artefacts
 ```
 
@@ -52,10 +55,14 @@ Note: `\graphicspath` in the base CV points to the photo/ folder in the repo roo
 
 ## Available AI Workflows
 
+Skills live in `.cursor/skills/`; career-ops routing lives in `.cursor/rules/career-ops.mdc`.
+
 | What you say | What happens |
 |---|---|
-| "tailor CV for [folder]" | Runs cv-tailor: creates insights.json, updates CV, creates changes.json |
-| "write motivation letter for [folder]" | Runs motivation-letter: creates motivation.tex |
+| "tailor CV for [folder]" | Runs cv-tailor skill: creates insights.json, updates CV, creates changes.json |
+| "write motivation letter for [folder]" | Runs motivation-letter skill: creates motivation.tex |
 | "report on [folder]" | Generates a CV–JD match report.md |
 | "rank jobs" / "sort applications by fit" | Runs job-ranking: scores all active applications 1–5 and outputs a priority table |
+| "prepare me for interview with [folder]" | Runs interview-prep: position_research.md, application_fit.md, interview_qa.md |
+| "feedback on my interview answers for [folder]" | Runs interview-feedback: scores and improves answers in interview_qa.md |
 | "export saved jobs from Notion" | Runs the Python export script |

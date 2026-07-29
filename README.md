@@ -12,7 +12,7 @@ Keep a clean pipeline from job capture to application readiness:
 
 ## Skills
 
-Skills live under `.claude/skills/` and provide reusable workflows:
+Workflow skills live under `.cursor/skills/` (Cursor) and `.claude/skills/` (Claude Code):
 
 - `career-ops`: command center for scanning, evaluating, tracking, and reporting on applications and offers.
 - `cv-tailor`: extract requirements into `insights.json` and adapt `CV_farzaneh_labbaf.tex` for a saved job folder.
