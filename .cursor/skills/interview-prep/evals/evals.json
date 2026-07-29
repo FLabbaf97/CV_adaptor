@@ -1,0 +1,45 @@
+{
+  "skill_name": "interview-prep",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Prepare me for an interview with this position. The application folder is at interview-prep-workspace/fixtures/epfl_fresh (EPFL Mathis Lab Software Engineer for Scientific AI). Use base_cv/cv.md and base_cv/context_for_cover_letter.md from the repo root. Research the lab online, write position_research.md and application_fit.md, and create interview_qa.md with 10-15 hard role-specific questions. Save all three files in that fixture folder, then copy them into your outputs directory as well.",
+      "expected_output": "position_research.md, application_fit.md, and interview_qa.md in the fixture folder and copied to outputs/; questions probe CV gaps; no invented credentials.",
+      "files": [],
+      "expectations": [
+        "Creates position_research.md focused on Mathis Lab / affordances / SCENE (not generic EPFL only)",
+        "Creates application_fit.md with fit, motivation, why-them, and honest gaps",
+        "Creates interview_qa.md with between 10 and 20 questions",
+        "Questions are role-specific (reference JD/CV tools or projects), not generic HR staples",
+        "interview_qa.md uses Your answer / Feedback / Score / Improve slots",
+        "Does not invent employers, metrics, or tools absent from CV materials"
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Prepare me for an interview for interview-prep-workspace/fixtures/epfl_with_research. position_research.md and application_fit.md already exist — reuse them unless clearly stale. Create interview_qa.md with 12 challenging questions probing gaps. Also copy final interview_qa.md (and note whether research/fit were reused) into your outputs directory.",
+      "expected_output": "interview_qa.md created; existing research/fit reused (not fully rewritten); outputs copy present.",
+      "files": [],
+      "expectations": [
+        "Reuses existing position_research.md and application_fit.md without full rewrite",
+        "Creates interview_qa.md with at least 10 questions",
+        "Questions probe gaps called out in application_fit (e.g. JAX, DataJoint, affordances)",
+        "Does not fill in user answers"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Give feedback on my interview answers for interview-prep-workspace/fixtures/epfl_feedback. Read interview_qa.md (answers are filled), plus description.md, position_research.md, application_fit.md, and base_cv materials. Score each answered question, write Feedback and Improve in the same interview_qa.md, add a Feedback summary, then copy the graded interview_qa.md to your outputs directory. Follow the interview-feedback skill.",
+      "expected_output": "Graded interview_qa.md with scores, feedback, improve tips, and summary; weak generic answers scored lower than specific ones.",
+      "files": [],
+      "expectations": [
+        "Each answered question has numeric Score out of 10",
+        "Feedback and Improve filled for each answered question",
+        "Feedback summary with average score is present",
+        "Generic/weak answers (e.g. Q1, Q4) score lower than stronger specific answers (e.g. Q2, Q5)",
+        "Does not delete the user's original answers",
+        "Improvement tips do not invent new CV credentials"
+      ]
+    }
+  ]
+}
