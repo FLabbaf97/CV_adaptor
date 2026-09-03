@@ -1,3 +1,8 @@
+% !TEX program = pdflatex
+% PNG photos need PDF output. This also makes `latex file.tex` produce a PDF
+% instead of DVI (which cannot read PNG size / BoundingBox).
+\ifdefined\pdfoutput\pdfoutput=1\fi
+
 \documentclass[9pt, letterpaper]{extarticle}
 
 % ============================================================================

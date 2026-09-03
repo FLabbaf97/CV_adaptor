@@ -17,6 +17,7 @@ Scan every active application folder, compare each role against the candidate's 
 
 ## Required inputs (read all before scoring)
 
+
 | File | Purpose |
 |------|---------|
 | `base_cv/cv.md` | Plain-text CV — primary evidence for experience fit |
@@ -49,6 +50,7 @@ For each folder, read the JD and extract:
 - 2–4 **company keywords** (sector, mission, org type)
 - Seniority / years expected
 - Must-have vs nice-to-have themes
+- language requirements (if stated)
 
 ### 4. Score each role (1–5 integers only)
 
@@ -66,7 +68,7 @@ Use **whole numbers from 1 to 5**. Do not use stars, percentages, or letter grad
 
 **Interest** weights: `context_for_cover_letter.md` preferences — healthcare/med-tech, regulated AI, startups, mission-driven work, scientific collaboration.
 
-**Overall rank** = sort primarily by `(Fit + Interest)` descending; break ties with Fit, then Interest. Optionally show `Combined` column as sum (2–10).
+**Overall rank** = sort primarily by `(2*Fit + Interest)/3` descending; 
 
 ### 5. Output report
 
@@ -123,6 +125,7 @@ Use the same structure as sections A–D. Do not overwrite prior ranking files u
 - If a JD is missing or empty, exclude that folder and list it under **Skipped folders**.
 - Be explicit about stretch roles (e.g. "Research Scientist" vs applied ML engineer).
 - Location "Not specified" is acceptable when the JD omits it.
+- the final answer should be precise. 
 
 ## Trigger examples
 

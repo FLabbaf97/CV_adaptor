@@ -115,6 +115,7 @@ Save `applications/{folder}/changes.json` with this structure:
 
 After completing all edits, respond with:
 
+0. render the tex file to create a pdf. and check number of pages in cv_farzaneh_labbaf.pdf and report it. 
 1. The final `match_score` and verdict.
 2. A brief summary of the most impactful changes (top 3).
 3. Any gaps that could not be closed.
