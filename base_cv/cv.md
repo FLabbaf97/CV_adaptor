@@ -10,7 +10,8 @@
 
 ## Summary
 
-Machine Learning Engineer with strong experience building and deploying production-grade ML systems in biomedical and startup environments. Experienced in applied machine learning for genomics, phage therapy, speech, biological images, and graphs. Proficient in MLOps and scalable ML engineering across cloud and hybrid setups (AWS, Azure). Master’s in Computer Science, focused on working with complex, real-world data and delivering reliable ML solutions through close collaboration with domain experts.
+Versatile AI/ML Engineer with a robust software engineering foundation and proven track record in startup environments. Specialized in developing end-to-end machine learning solutions for biomedical applications, with extensive experience in health-tech and clinical data systems. Demonstrates broad technical expertise spanning AI software engineering, agentic systems, MLOps, and data, enabling effective leadership across diverse technical responsibilities. Proficient in cloud-native development and deployment, with hands-on experience architecting production systems on AWS and Azure. Thrives in collaborative, multi-disciplinary environments, successfully bridging technical implementation with domain expertise in bioinformatics, biologists, and research teams.
+
 
 ---
 
@@ -41,7 +42,7 @@ Machine Learning Engineer with strong experience building and deploying producti
 - Prompt Engineering, LLM Integration
 - Retrieval-Augmented Generation (RAG), Vector Databases, Graph Embeddings
 - Model Evaluation, Transfer Learning, LLM evaluation, Fine-tuning
-- AI-Assisted Software Development, AI-Agents, MCP
+- AI-Assisted Software Development, AI-Agents, MCP, Agentic Systems
 - Graph Neural Networks (GNNs)
 
 ### Bioinformatics
@@ -81,7 +82,7 @@ Machine Learning Engineer with strong experience building and deploying producti
 
 ## Work Experience
 
-### Machine Learning Engineer | MLOps
+### Machine Learning Engineer | AI software developer
 
 **Precise Health SA — Sion**
 *02/2025 – Present*
@@ -95,8 +96,10 @@ Machine Learning Engineer with strong experience building and deploying producti
 - Designed AI-assisted experimentation workflows that leverage LLMs to generate experiment configurations, execute training pipelines, analyze results, and summarize findings with minimal manual intervention.
 - Established AI-assisted development practices by defining reusable Cursor rules and specialized AI workflows for code generation, code review, production readiness, and collaborative software development.
 - Built modular, configuration-driven ML infrastructure that enables rapid experimentation and seamless integration with AI coding assistants.
-- Supervised and coordinated outsourced frontend development while aligning product, technical, and research requirements.
 - Collaborated closely with bioinformatics and microbiology teams to build interpretable, clinically relevant AI solutions from complex genomic data.
+- Performed genomic feature engineering, biomarker discovery, and large-scale sequence analysis using Prokka and MMseqs2, improving model robustness and interpretability.
+- Processed and analyzed large-scale genomic datasets for batch feature extraction and ML training, building scalable cloud-based pipelines for efficient model development.
+
 
 ### AI Software Developer
 
@@ -121,7 +124,7 @@ Machine Learning Engineer with strong experience building and deploying producti
 - Led the full development lifecycle of an ML pipeline, labeling, model training, and deployment.
 - Developed an object tracking system for 400+ cells, achieving a 90% accuracy via feature optimization.
 
-### Software Developer | DevOps Engineer  
+### Software Developer
 **Hamravesh — Tehran**  
 *10/2017 – 02/2019*
 - Worked as a DevOps Engineer and front-end software developer, supporting the development and deployment of scalable mobile applications.
